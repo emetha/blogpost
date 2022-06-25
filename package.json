@@ -1,12 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next ",
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc",
     "export": "next build && next export",
-    "deploy": "next run export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
+    "deploy": "npm run export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "classnames": "2.3.1",
